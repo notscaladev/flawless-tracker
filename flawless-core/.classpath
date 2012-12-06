@@ -12,5 +12,8 @@
 			<attribute name="owner.project.facets" value="jpt.jpa"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/1/flawless/flawless-core/libs/spring-beans-3.2.0.RC2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1/flawless/flawless-core/libs/spring-context-3.2.0.RC2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1/flawless/flawless-core/libs/spring-core-3.2.0.RC2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
