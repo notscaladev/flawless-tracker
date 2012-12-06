@@ -2,3 +2,7 @@
 /libraries
 /flawless-core/build
 /flawless-web/build
+/flawless-core/sql
+/flawless-core/dist
+/javax.persistence_2.0.4.v201112161009.jar
+/flawless-web/dist/

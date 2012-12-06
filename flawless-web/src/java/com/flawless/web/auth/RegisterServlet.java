@@ -4,6 +4,10 @@
  */
 package com.flawless.web.auth;
 
+import com.flawless.core.user.domain.User;
+import com.flawless.core.user.domain.impl.UserImpl;
+import com.flawless.core.user.service.UserService;
+import com.flawless.core.user.service.impl.UserServiceImpl;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -74,7 +78,15 @@ public class RegisterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        UserServiceImpl userServiceImpl = new UserServiceImpl();
+        UserImpl user = new UserImpl();
+        String username = request.getParameter("username").toString();
+        String email = request.getParameter("email").toString();
+        String password = request.getParameter("password").toString();
+        user.setName(username);
+        user.setEmail(email);
+        user.setPassword(password);
+        userServiceImpl.createUser(user);
     }
 
     /**
@@ -84,6 +96,6 @@ public class RegisterServlet extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Short description";
+        return "register.jsp";
     }// </editor-fold>
 }

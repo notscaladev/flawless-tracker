@@ -50,7 +50,7 @@
     </div>
 
     <div class="container">
-        <form name="reset" action="/flawless/register" method="post">
+        <form method="post">
             <h3>For sign up please fill this form</h3>
             <p>Username</p>
             <p></p>
